@@ -23,7 +23,7 @@ class ClienteController extends Controller
         //     $clientes = Cliente::paginate(10);
         // }
 
-        $clientes = Cliente::search(request('search'))->paginate();
+        $clientes = Cliente::search(request('search'))->paginate(10);
 
         // $clientes = Cliente::paginate(10);
 
