@@ -9,7 +9,7 @@ class Zona extends Model
 {
     use HasFactory;
 
-    protected $primaryKey = 'itzonas';
+    protected $primaryKey = 'idtbzonas';
     public $timestamps = false;
 
     protected $table = "tbzonas";

@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('tbzonas', function (Blueprint $table) {
-            $table->id('itzonas');
+            $table->id('idtbzonas');
             // $table->string('detazona');
             $table->string('detazona')->default('');
             // $table->timestamps();
@@ -28,6 +28,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('zonas');
+        Schema::dropIfExists('tbzonas');
     }
 };

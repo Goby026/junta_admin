@@ -17,7 +17,7 @@ class Deuda extends Model
     protected $fillable = [
         'usuario',
         'codigo',
-        'descripcion',
+        'iddeudadescripcion',
         'periodo',
         'total',
         'saldo',

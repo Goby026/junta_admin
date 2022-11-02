@@ -16,8 +16,21 @@ class Cliente extends Model
 
     protected $fillable = [
         'dni',
-        'apellidos',
-        'nombres'
+        'num_instalaciones',
+        'nombres',
+        'ape_paterno',
+        'ape_materno',
+        'direccion',
+        'num_familias',
+        'exo_p',
+        'exo_a',
+        'exo_f',
+        'fec_nac',
+        'fec_ing',
+        'baja',
+        'fec_baja',
+        'idtipocliente',
+        'idtbzonas'
     ];
 
     public function toSearchableArray()
@@ -26,8 +39,10 @@ class Cliente extends Model
 
         return [
             'dni' => $this->dni,
-            'apellidos' => $this->apellidos,
-            'nombres' => $this->nombres,
+            'nombres'=> $this->nombres,
+            'ape_paterno'=> $this->ape_paterno,
+            'ape_materno'=> $this->ape_materno,
+            'direccion'=> $this->direccion
         ];
     }
 }

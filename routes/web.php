@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ClienteController;
 use App\Http\Controllers\ZonaController;
+use App\Http\Controllers\DeudaController;
 use Illuminate\Support\Facades\Route;
 
 /*

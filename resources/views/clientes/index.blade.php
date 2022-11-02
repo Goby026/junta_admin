@@ -50,6 +50,9 @@
                                         <th
                                             class="text-center text-uppercase text-secondary text-xs font-weight-bolder opacity-7">
                                             NOMBRES</th>
+                                        <th
+                                            class="text-center text-uppercase text-secondary text-xs font-weight-bolder opacity-7">
+                                            DEUDA</th>
                                         <th colspan="3" class="text-uppercase text-secondary text-xs font-weight-bolder opacity-7">OPCIONES</th>
                                     </tr>
                                 </thead>
@@ -63,8 +66,12 @@
                                             <p class="text-xs text-center text-secondary mb-0">{{ $cliente->dni }}</p>
                                         </td>
                                         <td>
-                                            <p class="text-xs text-center text-secondary mb-0">{{ $cliente->apellidos }}</p>
+                                            <p class="text-xs text-center text-secondary mb-0">{{ $cliente->ape_paterno }} {{ $cliente->ape_materno }}</p>
                                         </td>
+                                        <td>
+                                            <p class="text-xs text-center text-secondary mb-0">{{ $cliente->nombres }}</p>
+                                        </td>
+
                                         <td>
                                             <p class="text-xs text-center text-secondary mb-0">{{ $cliente->nombres }}</p>
                                         </td>
